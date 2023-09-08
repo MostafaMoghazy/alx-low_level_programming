@@ -10,8 +10,8 @@
 
 int main(void)
 {
-	char arr_ch[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	char arr[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	write(1, arr_ch, strlen(arr_ch));
+	write(1, arr, strlen(arr));
 	return (1);
 }
