@@ -4,7 +4,7 @@
  * main - Entry point
  *
  * Description: A C program which prints all
- * possible different combinations of two digits
+ * possible different combinations of three digits
  *
  * Return: Always 0 (Success)
 */
