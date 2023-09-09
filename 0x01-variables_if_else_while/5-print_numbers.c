@@ -5,7 +5,7 @@
  *
  * Description: A C program which prints from 0 to 9 endl
  *
- * Retutn: Always 0 (Success)
+ * Return: Always 0 (Success)
 */
 
 int main(void)
