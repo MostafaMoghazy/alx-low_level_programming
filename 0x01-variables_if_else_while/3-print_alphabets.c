@@ -11,12 +11,14 @@
 int main(void)
 {
 	char Char;
-	
-	for (Char = 'a'; Char <= 'z'; Char++)
+
+	/*prints form a to z*/
+	for (Char = 'a'; Chari <= 'z'; Char++)
 	{
 		putchar(Char);
 	}
 
+	/*prints form a to z*/
 	for (Char = 'A'; Char <= 'Z'; Char++)
 	{
 		putchar(Char);
