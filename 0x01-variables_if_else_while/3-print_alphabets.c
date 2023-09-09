@@ -13,7 +13,7 @@ int main(void)
 	char Char;
 
 	/*prints form a to z*/
-	for (Char = 'a'; Chari <= 'z'; Char++)
+	for (Char = 'a'; Char <= 'z'; Char++)
 	{
 		putchar(Char);
 	}
