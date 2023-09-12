@@ -16,15 +16,18 @@ void times_table(void)
 		for (j = 0; j < cols; j++)
 		{
 			product = i * j;
-			putchar(product / 10 + '0');
-			putchar(product % 10 + '0');
+			if (product < 10)
+				_putchar(' ');
+			else
+				_putchar(product / 10 + '0');
+			_putchar(product % 10 + '0');
 
 			if (j < cols - 1)
 			{
-				putchar(',');
-				putchar(' ');
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
