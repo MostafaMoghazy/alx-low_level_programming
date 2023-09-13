@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description
+ * Description: print some nums
  *
  * Return: always 0
  */
