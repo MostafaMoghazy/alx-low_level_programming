@@ -21,10 +21,10 @@ int main(void)
 		num1 = num2;
 		num2 = sum;
 
-		if (i == 40)
+		if (i == 49)
 			printf("\n");
 		else
-			printf(" ");
+			printf(",");
 	}
 	return (0);
 }
