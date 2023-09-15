@@ -44,7 +44,7 @@ int main(void)
 	long int number = 612852475143;
 	long int result = LPF(number);
 
-	printf("%lld\n", result);
+	printf("%li\n", result);
 
 	return (0);
 }
