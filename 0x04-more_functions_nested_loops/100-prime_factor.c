@@ -8,7 +8,7 @@
  *
  * Return: the largest factor lf
  */
-long int LPF(long long n)
+long int LPF(long int n)
 {
 	long int LF = -1;
 	long int i;
