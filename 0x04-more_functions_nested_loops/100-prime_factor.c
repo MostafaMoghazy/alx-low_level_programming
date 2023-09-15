@@ -8,9 +8,10 @@
  *
  * Return: the largest factor lf
  */
-long long LPF(long long n)
+long int LPF(long long n)
 {
-	long long LF = -1;
+	long int LF = -1;
+	long int i;
 
 	while (n % 2 == 0)
 	{
@@ -18,7 +19,7 @@ long long LPF(long long n)
 		n /= 2;
 	}
 
-	for (long long i = 3; i <= sqrt(n); i += 2)
+	for (i = 3; i <= sqrt(n); i += 2)
 	{
 		while (n % i == 0)
 		{
@@ -40,8 +41,8 @@ long long LPF(long long n)
  */
 int main(void)
 {
-	long long number = 612852475143;
-	long long result = LPF(number);
+	long int number = 612852475143;
+	long int result = LPF(number);
 
 	printf("%lld\n", result);
 
