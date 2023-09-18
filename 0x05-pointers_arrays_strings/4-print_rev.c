@@ -8,12 +8,13 @@
 
 void print_rev(char *s)
 {
+	char sinit = *s;
+
 	if (s == NULL || *s == '\0')
 	{
 		_putchar('\n');
 		return;
 	}
-	char sinit = *s;
 
 	while (*s != '\0')
 	{
