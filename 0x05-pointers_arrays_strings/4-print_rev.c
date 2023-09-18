@@ -14,11 +14,11 @@ void print_rev(char *s)
 	{
 		s++;
 	}
-	s--;
-	while (*s != sinit)
+	while (s--)
 	{
 		_putchar(*s);
-		s--;
+		if (*s == sinit)
+			break;
 	}
 	_putchar('\n');
 }
