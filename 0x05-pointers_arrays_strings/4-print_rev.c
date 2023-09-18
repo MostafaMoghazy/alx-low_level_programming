@@ -8,7 +8,8 @@
 
 void print_rev(char *s)
 {
-	char sinit = *s;
+	char sinit = *s--;
+
 	while (*s != '\0')
 	{
 		s++;
@@ -19,6 +20,5 @@ void print_rev(char *s)
 		_putchar(*s);
 		s--;
 	}
-	_putchar(*s);
 	_putchar('\n');
 }
