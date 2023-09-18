@@ -16,6 +16,8 @@ void print_rev(char *s)
 	}
 	while (s--)
 	{
+		if (*s == "")
+			break;
 		_putchar(*s);
 		if (*s == sinit)
 			break;
