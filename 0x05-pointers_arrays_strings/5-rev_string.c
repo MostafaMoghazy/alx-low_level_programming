@@ -8,15 +8,15 @@
 
 void rev_string(char *s)
 {
-    int i, j, swap;
+	int i, j, swap;
 
-    for (i = 0; *s != '\0'; i++)
-        ;
+	for (i = 0; s[i] != '\0'; i++)
+		;
 
-    for (j = 0; j < i / 2; j++)
-    {
-        swap = s[j];
-        s[j] = s[i - 1 - j];
-        s[i - 1 - j] = swap;
-    }
+	for (j = 0; j < i / 2; j++)
+	{
+		swap = s[j];
+		s[j] = s[i - 1 - j];
+		s[i - 1 - j] = swap;
+	}
 }
