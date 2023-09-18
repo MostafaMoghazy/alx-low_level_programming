@@ -8,17 +8,17 @@
 
 void print_rev(char *s)
 {
-	int i = 0;
+	char sinit = *s;
 
 	while (*s != '\0')
 	{
 		s++;
-		i++;
 	}
-
-	while (i--)
+	s--;
+	while (*s != sinit)
 	{
-		_putchar(s[i]);
+		_putchar(*s);
+		s--;
 	}
 	_putchar('\n');
 }
