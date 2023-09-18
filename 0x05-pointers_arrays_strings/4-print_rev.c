@@ -8,6 +8,11 @@
 
 void print_rev(char *s)
 {
+	if (s == NULL || *s == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
 	char sinit = *s;
 
 	while (*s != '\0')
@@ -16,8 +21,6 @@ void print_rev(char *s)
 	}
 	while (s--)
 	{
-		if (*s == "")
-			break;
 		_putchar(*s);
 		if (*s == sinit)
 			break;
