@@ -8,7 +8,7 @@
 
 void print_rev(char *s)
 {
-	char sinit = *s--;
+	char sinit = --*s;
 
 	while (*s != '\0')
 	{
