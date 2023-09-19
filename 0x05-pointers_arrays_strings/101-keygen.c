@@ -3,24 +3,23 @@
 #include <time.h>
 
 /**
- * main - generates a random password of a specified length
+ * main - generates random passwords for 101-crackme
  * Return: Always 0 (Success)
- **/
+**/
 
 int main(void)
 {
-	char passwordCharacter;
-	int i;
+	int pass;
+	char ch;
 
 	srand(time(NULL));
-
-	for (i = 0; i < 15; i++)
+	pass = 0;
+	while (pass <= 2645)
 	{
-		passwordCharacter = rand() % 128;
-		putchar(passwordCharacter);
+		ch = rand() % 128;
+		pass += ch;
+		putchar(ch);
 	}
-
-	putchar('\n');
-
+	putchar(2772 - pass);
 	return (0);
 }
