@@ -14,7 +14,7 @@ int main(void)
 
 	srand(time(NULL));
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 15; i++)
 	{
 		passwordCharacter = rand() % 128;
 		putchar(passwordCharacter);
