@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - This function appends the src string to the dest string
+ * _strncat - This function appends the src string to the dest string
  *
  * @dest: holds the location of the first sring
  * @src: holds the location of the secin sring
@@ -10,7 +10,7 @@
  * Return: returns the value of the string after cat
  */
 
-char char *_strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
 
