@@ -36,24 +36,18 @@ char *cap_string(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (isSeparator(str[i]))
+		if (isSeparator(str[i]) || !isalpha(str[i]))
 		{
 			capitalizeNext = 1;
 		}
 		else if (capitalizeNext)
 		{
-			if (isalpha(str[i]))
-			{
-				str[i] = toupper(str[i]);
-			}
+			str[i] = toupper(str[i]);
 			capitalizeNext = 0;
 		}
 		else
 		{
-			if (isalpha(str[i]))
-			{
-				str[i] = tolower(str[i]);
-			}
+			str[i] = tolower(str[i]);
 		}
 	}
 
