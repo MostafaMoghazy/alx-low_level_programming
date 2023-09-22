@@ -14,7 +14,7 @@ char *cap_string(char *string)
 
 	for (i = 0; string[i] != '\0'; i++)
 	{
-		if (string[i] == " ")
+		if (string[i] == 32)
 		{
 			i++;
 			if (string[i] >= 97 && string[i] <= 122)
