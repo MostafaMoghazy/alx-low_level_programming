@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * islower - determines if lower
+ * IsLower - determines if lower
  * @ch: character
  * Return: 1 or 0
  */
 
-int islower(char ch)
+int IsLower(char ch)
 {
 	return (ch >= 97 && ch <= 122);
 }
@@ -47,7 +47,7 @@ char *cap_string(char *s)
 	{
 		if (isSeparator(*s))
 			fs = 1;
-		else if (islower(*s) && fs)
+		else if (IsLower(*s) && fs)
 		{
 			*s -= 32;
 			fs = 0;
