@@ -23,13 +23,12 @@ int isSeparator(char c)
 }
 
 /**
- * cap_string - This function capetalize the string
+ * cap_string - This function capitalizes the string
  *
  * @str: holds the location of the string's first element
  *
- * Return: returns a pointer of the string after capetalizing
+ * Return: returns a pointer of the string after capitalizing
  */
-
 char *cap_string(char *str)
 {
 	int len = strlen(str);
@@ -41,14 +40,17 @@ char *cap_string(char *str)
 		{
 			capitalizeNext = 1;
 		}
-		else if (capitalizeNext)
-		{
-			str[i] = toupper(str[i]);
-			capitalizeNext = 0;
-		}
 		else
 		{
-			str[i] = tolower(str[i]);
+			if (capitalizeNext && isalpha(str[i]))
+			{
+				str[i] = toupper(str[i]);
+				capitalizeNext = 0;
+			}
+			else
+			{
+				str[i] = tolower(str[i]);
+			}
 		}
 	}
 
