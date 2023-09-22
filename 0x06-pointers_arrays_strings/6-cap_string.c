@@ -32,23 +32,28 @@ int isSeparator(char c)
 char *cap_string(char *str)
 {
 	int i;
+	int capitalizeNext = 1;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (isSeparator(str[i]))
 		{
-			if (str[i + 1] != '\0' && isalpha(str[i + 1]))
-			{
-				str[i + 1] = toupper(str[i + 1]);
-			}
+			capitalizeNext = 1;
 		}
-		else if (i == 0 || !isalpha(str[i - 1]))
+		else if (capitalizeNext)
 		{
-			str[i] = toupper(str[i]);
+			if (isalpha(str[i]))
+			{
+				str[i] = toupper(str[i]);
+			}
+			capitalizeNext = 0;
 		}
 		else
 		{
-			str[i] = tolower(str[i]);
+			if (isalpha(str[i]))
+			{
+				str[i] = tolower(str[i]);
+			}
 		}
 	}
 
