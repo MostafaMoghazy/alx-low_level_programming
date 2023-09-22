@@ -41,6 +41,7 @@ int isSeparator(char c)
  */
 char *cap_string(char *s)
 {
+	char *ptr = s;
 	int fs = 1;
 
 	while (*s)
@@ -56,5 +57,5 @@ char *cap_string(char *s)
 			fs = 0;
 		s++;
 	}
-	return (s);
+	return (ptr);
 }
