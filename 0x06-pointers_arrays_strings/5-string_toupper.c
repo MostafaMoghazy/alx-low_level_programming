@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * string_toupper - This function coppies the src string to the dest string
+ * string_toupper - This function chanes string to upper
  *
  * @string: holds the location of the string's first element
  *
