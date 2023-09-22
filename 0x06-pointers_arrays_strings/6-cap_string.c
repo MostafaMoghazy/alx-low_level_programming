@@ -1,6 +1,16 @@
 #include "main.h"
-#include <string.h>
-#include <ctype.h>
+#include <stdio.h>
+
+/**
+ * islower - determines if lower
+ * @ch: character
+ * Return: 1 or 0
+ */
+
+int islower(char ch)
+{
+	return (ch >= 97 && ch <= 122);
+}
 
 /**
  * isSeparator - to check if a character is a word separator
@@ -25,31 +35,26 @@ int isSeparator(char c)
 /**
  * cap_string - This function capitalizes the string
  *
- * @str: holds the location of the string's first element
+ * @s: holds the location of the string's first element
  *
  * Return: returns a pointer of the string after capitalizing
  */
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-	int i;
-	int capitalizeNext = 1;
+	int fs = 1;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (*s)
 	{
-		if (isSeparator(str[i]) || !isalpha(str[i]))
+		if (isSeparator(*s))
+			fs = 1;
+		else if (islower(*s) && fs)
 		{
-			capitalizeNext = 1;
-		}
-		else if (capitalizeNext)
-		{
-			str[i] = toupper(str[i]);
-			capitalizeNext = 0;
+			*s -= 32;
+			fs = 0;
 		}
 		else
-		{
-			str[i] = tolower(str[i]);
-		}
+			fs = 0;
+		s++;
 	}
-
-	return (str);
+	return (s);
 }
