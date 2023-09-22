@@ -37,7 +37,7 @@ char *cap_string(char *str)
 	{
 		if (isSeparator(str[i]))
 		{
-			if (i + 1 < strlen(str) && isalpha(str[i + 1]))
+			if (str[i + 1] != '\0' && isalpha(str[i + 1]))
 			{
 				str[i + 1] = toupper(str[i + 1]);
 			}
