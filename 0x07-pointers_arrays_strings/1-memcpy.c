@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * _memcpy - fills the first n bytes of the memory area pointed to by s with byte b
+ * _memcpy - fills the first n bytes of the memory
+ * area pointed to by s with byte b
  *
  * @dest: holds the first location of the portion to be filled
  * @src: holds the first location of the portion to be filled with
