@@ -6,9 +6,9 @@
  *
  * Return: length of the string
  */
-int strln(char *s)
+int _strln(char *s)
 {
 	if (*s == '\0')
 		return (0);
-	return (1 + strln(s + 1));
+	return (1 + _strln(s + 1));
 }
