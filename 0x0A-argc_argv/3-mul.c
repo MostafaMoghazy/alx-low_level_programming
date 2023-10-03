@@ -26,14 +26,14 @@ int _atoi(char *str)
 		if (str[x] == '-')
 			++d;
 
-		if (str[x] >= '0' && s[x] <= '9')
+		if (str[x] >= '0' && str[x] <= '9')
 		{
-			dg = s[x] - '0';
+			dg = str[x] - '0';
 			if (d % 2)
 				dg = -dg;
 			n = n * 10 + dg;
 			FU = 1;
-			if (s[x + 1] < '0' || s[x + 1] > '9')
+			if (str[x + 1] < '0' || str[x + 1] > '9')
 				break;
 			FU = 0;
 		}
