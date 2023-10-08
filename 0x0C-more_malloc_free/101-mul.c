@@ -57,8 +57,7 @@ void errors(void)
 int main(int argc, char *argv[])
 {
 	char *string1, *string2;
-	int lens1, lens2, len;
-	int x, hold, dig1, dig2, *res, i = 0;
+	int lens1, lens2, len, x, hold, dig1, dig2, *res, i = 0;
 
 	string1 = argv[1], string2 = argv[2];
 	if (argc != 3 || !is_digit(string1) || !is_digit(string2))
