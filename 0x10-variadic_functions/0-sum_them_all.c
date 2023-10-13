@@ -8,7 +8,6 @@ void print_all(const char *const format, ...)
 {
 	int x = 0;
 	char *strptr, *separ = "";
-
 	va_list list;
 
 	va_start(list, format);
